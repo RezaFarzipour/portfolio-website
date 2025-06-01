@@ -20,7 +20,9 @@ A modern and interactive **Front-End Developer Portfolio** built with cutting-ed
 - 🧰 **Skills Section** – Technologies and tools I’m proficient with.
 - 🛠️ **Projects Section** – Includes:
   - Image preview
-  - Project description
+  - Project Overview
+  - Key Features
+  - Challenges & Solutions
   - Live link
   - GitHub link
 - 🕶️ **Dark UI** – Stylish dark-themed interface with focus on readability.
@@ -34,15 +36,15 @@ A modern and interactive **Front-End Developer Portfolio** built with cutting-ed
 
 ### 💼 My Projects
 
-![Experience Screenshot](public/images/readme/projects.png)
+![project Screenshot](public/images/readme/projects.png)
 
 ### 💼 My Skills
 
-![Experience Screenshot](public/images/readme/tech.png)
+![skills Screenshot](public/images/readme/tech.png)
 
 ### 💼 Project Detail Page
 
-![Experience Screenshot](public/images/readme/project-detail.png)
+![project detail Screenshot](public/images/readme/project-detail.png)
 
 ## 🌐 Live Website
 
@@ -57,7 +59,7 @@ To run this project on your local machine:
 ### 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/my-portfolio.git
+git clone https://github.com/RezaFarzipour/portfolio-website.git
 ```
 
 ### 2.Navigate to the project directory
