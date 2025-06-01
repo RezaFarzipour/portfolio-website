@@ -1,0 +1,73 @@
+.contact_section {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    position: relative;
+  }
+  
+  .contact_section_h1 {
+    position: absolute;
+    top: -2%;
+    left: 40%;
+  }
+  
+  .social_box {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .social_box_a {
+    color: lightgray;
+    text-decoration: none;
+    font-size: 20px;
+    text-wrap: nowrap;
+  }
+  
+  .social_box_i {
+    color: #727fde;
+    font-size: 30px;
+    margin-right: 10px;
+  }
+  
+  .social_icons a i {
+    color: white;
+    margin-top: 40px;
+  }
+  
+  .contact_box_p {
+    max-width: 400px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+  }
+  
+  .contact_box_input {
+    padding: 7.5px 30px;
+    background-color: lightgrey;
+    width: 80%;
+    height: 25px;
+    border: none;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .contact_box_button {
+    margin-top: 30px;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #727fdeb4;
+    background-color: #2200493d;
+    box-shadow: 0 0 5px #727fde86;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .contact_box_button:hover {
+    box-shadow: 0 0 15px #727fde86;
+    opacity: 0.7;
+  }

@@ -1,0 +1,39 @@
+
+
+.hover_sign {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100px;
+}
+
+.hover_sign::before,
+.hover_sign::after {
+  content: "👆";
+  text-align: center;
+  position: absolute;
+  font-size: 50px;
+  top: 20%;
+  left: 40%;
+  border-radius: 50%;
+  animation: hoverAnimation 3s ease-in-out infinite;
+}
+
+@keyframes hoverAnimation {
+  0% {
+    box-shadow: 0 0 5px lightgray;
+    transform: translate(100%, 50%) rotate(30deg);
+  }
+
+  100% {
+    box-shadow: 0 0 15px lightgray;
+    transform: translateX(80%, 50%) rotate(0deg);
+  }
+}
+
+.hover_sign.active {
+  display: none;
+}
+
