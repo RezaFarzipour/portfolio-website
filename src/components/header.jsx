@@ -2,10 +2,13 @@
 import React, { useState } from "react";
 import { FaLinkedinIn, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { IoMdMenu } from "react-icons/io";
-import { IoIosCloseCircleOutline } from "react-icons/io";
+import { LanguageSwitcher } from "./LanguageSwitcher";
+import { useTranslations } from "next-intl";
+import Sidebar from "./Sidebar";
 
 const Header = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const t = useTranslations()
 
   const openSidebar = () => {
     setIsSidebarOpen(true);
@@ -21,24 +24,24 @@ const Header = () => {
         <div className="flex items-center">
           {/* <img className={styles.logo} src="images/miladicode.png" alt="logo" /> */}
           <h1 className="text-3xl max-[700px]:text-[25px]">
-            <span style={{ color: "#72a1de" }}>Reza</span> Farzipour
+            <span style={{ color: "#72a1de" }}>{t("reza")}</span> {t("farzipour")}
           </h1>
         </div>
-
-        <ul className="flex border-2 max-[700px]:hidden justify-between w-[30%] px-[15px] py-[15px] rounded-full bg-[rgba(0,0,69,0.3)] shadow-[0_0_10px_#727fde65]">
+<div></div>
+        <ul className="flex  border-2 max-[700px]:hidden justify-between w-[30%] px-[15px] py-[15px] rounded-full bg-[rgba(0,0,69,0.3)] shadow-[0_0_10px_#727fde65]">
           <li className="list-none">
-            <a className="no-underline text-white font-bold mx-[10px]" href="#">
-              About
+            <a className="no-underline text-white font-bold mx-[10px]" href="#about">
+           {t("about")}
             </a>
           </li>
           <li className="list-none">
-            <a className="no-underline text-white font-bold mx-[10px]" href="#">
-              Skills
+            <a className="no-underline text-white font-bold mx-[10px]" href="#skills">
+            {t("headerSkil")}
             </a>
           </li>
           <li className="list-none">
-            <a className="no-underline text-white font-bold mx-[10px]" href="#">
-              Projects
+            <a className="no-underline text-white font-bold mx-[10px]" href="#projects">
+            {t("HeaderProject")}
             </a>
           </li>
         </ul>
@@ -65,7 +68,11 @@ const Header = () => {
           >
             <FaWhatsapp />
           </a>
+
+          <LanguageSwitcher/>
         </div>
+
+
 
         <div
           className="text-[35px] pointer hidden max-[700px]:inline"
@@ -74,6 +81,13 @@ const Header = () => {
           <IoMdMenu />
         </div>
       </header>
+
+      {isSidebarOpen && (
+  <Sidebar  isOpen={isSidebarOpen} closeSidebar={closeSidebar} />
+)}
+
+
+  
 
       
     </>

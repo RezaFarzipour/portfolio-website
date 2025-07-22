@@ -22,12 +22,13 @@
   }
   
   .card:nth-child(3) p {
-    bottom: 12%;
+    bottom: 5%;
     position: absolute;
   }
   
   .card:nth-child(3) h1 {
-    bottom: 21%;
+    bottom: 16%;
+    padding: 5px;
     position: absolute;
   }
   
@@ -37,10 +38,11 @@
   
   .card:nth-child(4) p {
     max-width: 650px;
+    text-align: justify;
   }
   
   .card:nth-child(4) h1 {
-    bottom: 35%;
+    bottom: 28%;
     position: absolute;
   }
 

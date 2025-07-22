@@ -2,13 +2,13 @@ import React from "react";
 import SectionTitle from "../common/Tilte";
 import { IoIosCode } from "react-icons/io";
 
-const TechUsed = ({ technologies }) => {
+const TechUsed = ({ technologies ,techUsedLabel}) => {
   return (
     <>
       {/* Header */}
       <SectionTitle
         icon={<IoIosCode className="text-xl text-purple-600" />}
-        text={"Technologies Used"}
+        text={techUsedLabel}
       />
 
       {/* Tech Icons */}

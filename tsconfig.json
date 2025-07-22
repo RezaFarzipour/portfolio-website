@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "utils/truncateText.js"  ],
+, "utils/truncateText.js", "src/lib/i18n-provider.jsx", "src/lib/i18nInstance.js", "src/middleware.js"  ],
   "exclude": [
     "node_modules"
   ]

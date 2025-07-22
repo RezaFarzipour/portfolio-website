@@ -1,23 +1,38 @@
 "use client";
 import { motion } from "framer-motion";
 import { LiaSketch } from "react-icons/lia";
-const words = [
-  " Crafting",
-  "seamless",
-  "user",
-  "experiences",
-  "with",
-  "code",
-  "and",
-  " creativity",
-];
+import { useLocale } from "next-intl";
 
-const HeroSection = () => {
+const HeroSection = ({ t }) => {
+  const locale = useLocale();
+  const wordKeys =
+    locale === "fa"
+      ? [
+          "crafting",
+          "experiences",
+          "user",
+          "seamless",
+          "with",
+          "code",
+          "and",
+          "creativity",
+        ]
+      : [
+          "crafting",
+          "seamless",
+          "user",
+          "experiences",
+          "with",
+          "code",
+          "and",
+          "creativity",
+        ];
+        const words = wordKeys.map(t);
   return (
     <section className="text-white max-[700px]:mt-[20%]  mt-[10%] flex flex-col items-center justify-center text-center px-[20px] ">
       <div className="text-[#727fde] px-[15px] py-[5px] border border-[#727fde77] flex items-center gap-[6px] bg-[#2200493d] shadow-[0_0_5px_#727fde88] rounded-full mb-8">
         <LiaSketch />
-        front-end Developoer Portfolio
+        {t("titleHeader")}
       </div>
 
       <div className="text-[2.8rem] max-[700px]:text-1.5rem font-bold  leading-[1.3] flex flex-wrap justify-center max-w-[600px] mb-[20px]">
@@ -40,7 +55,7 @@ const HeroSection = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: words.length * 0.3 + 0.5 }}
       >
-        Hi! I'm Reza, a Next.js Developer based in Iran.
+   {t("introduction")}
       </motion.p>
 
       <motion.button
@@ -51,7 +66,7 @@ const HeroSection = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: words.length * 0.3 + 1 }}
       >
-        Download My CV ↗
+       {t("cv")} ↗
       </motion.button>
     </section>
   );

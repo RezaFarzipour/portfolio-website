@@ -1,24 +1,19 @@
 import React from "react";
 import AutoDisplaySection from "./animations/AutoDisplay";
 import SkillBox from "./SkillBox";
+import { FaCode } from "react-icons/fa";
+import SectionTitle from "./common/Tilte";
 
-
-
-const MySkills = () => {
+const MySkills = ({ t }) => {
   return (
-    <section  className="min-h-screen md:mt-[200px] mt-[400px]">
+    <section id="skills" className="min-h-screen md:mt-[200px] mt-[700px]">
       <AutoDisplaySection>
-        <h1 className="section_title autoBlur text-center">My Professional Skills💪</h1>
-        <p className="text-lg mb-12 text-center">
-          A comprehensive showcase of technologies and tools I've mastered
-          throughout my professional journey.
-        </p>
+        <SectionTitle icon={<FaCode />} text={t("MySkills")} />
+        <p className="text-lg mb-12 text-center">{t("skillSub")}</p>
       </AutoDisplaySection>
       <div className="flex justify-center items-center w-full ">
-      <SkillBox/>
-
+        <SkillBox t={t} />
       </div>
-         
     </section>
   );
 };

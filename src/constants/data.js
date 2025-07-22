@@ -9,30 +9,33 @@ import { GiTrade } from "react-icons/gi";
 import { CiWallet } from "react-icons/ci";
 import { TbReportAnalytics } from "react-icons/tb";
 import { FaChartBar } from "react-icons/fa";
+import { MdDataSaverOff } from "react-icons/md";
+import { SiPagerduty } from "react-icons/si";
+import { CiSearch } from "react-icons/ci";
 
 export const cardsData = [
   {
-    title: "Hi there im Reza",
-    text: "With 3 years of experience in front-end development.",
-    image: "images/grid1.png",
+    titleKey: "card1.title",
+    textKey: "card1.text",
+
+    image: "images/personal-image.webp",
     type: "image",
   },
   {
-    title: "Tech Stack",
-    text: "I specialize in variety of languages, frameworks, and tools that allow me to build robust and scalable applications.",
-    image: "images/grid2.png",
+    textKey: "card2.text",
+    image: "images/tech4.jpg",
     type: "image",
   },
   {
-    title: "Im very flexible with time zone communications & locations",
-    text: "I'm based in Italy, and open to remote work worldwide.",
+    titleKey: "card3.title",
+    textKey: "card3.text",
     video: "videos/glob.mp4",
     type: "video",
     button: true,
   },
   {
-    title: "My Passion for Coding",
-    text: "I love solving problems and building things through code. Programming is not just my profession – it's my passion. I enjoy exploring new technologies, and enhancing my skills.",
+    titleKey: "card4.title",
+    textKey: "card4.text",
     image: "images/grid4.png",
     type: "image",
   },
@@ -85,155 +88,12 @@ export const images = [
 export const projectsDetails = [
   {
     id: 1,
-    slug: "gold-store",
-    title: "Modern Gold Store",
-    Role: "Frontend Developer",
-    client: "Hossain Gold Store",
-    highlight: "Gold Store",
-    videoSrc: "videos/landingpage.webm",
-    description: `We have developed a fully responsive gold trading platform built with React and TypeScript, optimized for all screen sizes. The platform features two separate dashboards: one for customers and one for administrators.
-
-Customers can easily buy and sell gold, top up their wallet, withdraw funds, and even request physical gold withdrawals. On the admin side, the dashboard provides tools for monitoring transaction reports, managing deposits and withdrawals, setting gold prices, and more.
-
-This powerful and user-friendly system ensures a seamless and secure experience for both users and administrators.
-
-`,
-    technologies: [
-      {
-        name: "React Js",
-        svg: "/images/react.svg",
-        bgColor: "bg-white text-black",
-      },
-      {
-        name: "TypeScript",
-        icon: SiTypescript,
-        bgColor: "bg-blue-200 text-blue-800",
-      },
-      {
-        name: "React Query",
-        icon: SiReactquery,
-        bgColor: "bg-white text-red-500",
-      },
-
-      {
-        name: "Material UI",
-        svg: "/images/material.svg",
-        bgColor: "bg-blue-50 text-blue-400",
-      },
-
-      {
-        name: "React Hook Form",
-        svg: "/images/react-hook-form.svg",
-        bgColor: "bg-purple-100 text-purple-500",
-      },
-      {
-        name: "Python",
-        svg: "/images/python.svg",
-        bgColor: "bg-purple-100 text-purple-500",
-      },
-      {
-        name: "Django",
-        svg: "/images/django.svg",
-        bgColor: "bg-[#1a6045] text-purple-500",
-      },
-    ],
-
-    KeyFeatures: [
-      {
-        icon: MdDashboard,
-        text: "Dual Dashboard System: Separate, role-based dashboards for admins and customers with tailored access and control",
-      },
-      {
-        icon: GiTrade,
-        text: "Online Buying and Selling with Identity Verification",
-      },
-      {
-        icon: CiWallet,
-        text: "Gold Wallet (Digital Gold Storage)",
-      },
-      {
-        icon: TbReportAnalytics,
-        text: "Comprehensive reporting of all user activities available to the admin for monitoring and analysis.",
-      },
-    ],
-    challenges: [
-      "Handling role-based dashboard access and UI logic",
-      "Building user trust in virtual gold storage",
-    ],
-
-    solutions: [
-      " Implemented dynamic routing and conditional rendering based on user roles (admin/customer) at both backend and frontend levels.",
-      " Developed a transparent gold wallet with real-time balances, full history, and withdrawal options.",
-    ],
-
-    liveUrl: "https://project-one.vercel.app",
-    githubUrl: "https://github.com/RezaFarzipour/Goldstore-Final-Version",
-    features: [
-      {
-        name: "Admin Dashboard",
-        slides: [
-          {
-            title: "Admin view",
-            src: "/images/gold/admindashboard/admin1.png",
-            desc: "This image provides an overview of the admin dashboard, showcasing its key features, including account balance reports, cash withdrawals, gold withdrawals, gold sales, transaction history, and system settings.",
-          },
-          {
-            title: "Sell Gold Report",
-            src: "/images/gold/admindashboard/admin2.png",
-            desc: "This image displays the section of the admin dashboard related to customer gold sales reports. It includes parameters such as the customer's full name, phone number, sale date, sale amount, gold quantity, and transaction status",
-          },
-          {
-            title: "Admin Setting Page",
-            src: "/images/gold/admindashboard/adminsetting.png",
-            desc: "This image shows the admin settings page, featuring options such as setting the gold price, adjusting the store's gold inventory, and configuring the buy-sell price differenceAdditionally, the admin can view the current gold price and the total gold available in the store.",
-          },
-        ],
-      },
-      {
-        name: "Customer Dashboard",
-        slides: [
-          {
-            title: "Customer Dashboard Home",
-            src: "/images/gold/customerdashboard/customerview.png",
-            desc: "This image shows the Home section of the customer dashboard, where users can view the current gold buying price, wallet balance, and gold wallet balance.Additional features available in other sections include cash withdrawal, gold purchase, gold sale, transaction reports, and requests for physical gold delivery.",
-          },
-          {
-            title: "Gold Purchase",
-            src: "/images/gold/customerdashboard/buygold.png",
-            desc: "This image shows the Gold Purchase page, where the customer can view their wallet and gold wallet balances, and proceed to buy gold accordingly.",
-          },
-          {
-            title: "Sell Gold",
-            src: "/images/gold/customerdashboard/sellgold.png",
-            desc: "This image shows the Sell Gold  page, where the customer can view their wallet and gold wallet balances, and proceed to sell gold accordingly.",
-          },
-          {
-            title: "Reports",
-            src: "/images/gold/customerdashboard/reports.png",
-            desc: "In this section, the user can view detailed reports of cash deposits and withdrawals, as well as records of gold purchases and sales.",
-          },
-        ],
-      },
-
-      {
-        name: "Price Calculator",
-        slides: [
-          {
-            title: "Price Calculator",
-            src: "/images/gold/landingbox.png",
-            desc: "This feature is implemented on the landing page and allows users to view both the buy and sell prices of gold. By entering either the amount of gold or the total price, the corresponding value is automatically calculated in real time",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 2,
     slug: "metallugical_research_center",
-    title: " Research Center",
+    title: " Metallugical Research Center",
     Role: "Frontend Developer",
     highlight: "Metallugical Research ",
-    videoSrc: "videos/metallugicallanding.webm",
+    videoSrcWebm: "videos/metallugicallanding.webm",
+    videoSrcMp4:"videos/metallugicallanding.mp4",
     client: "Islamic Azad University ",
     description: `This project was developed for the Metallurgy Research Center at Islamic Azad University, aimed at streamlining the process of managing laboratory services and bookings. The platform enables the admin team to upload and manage all available services, while customers can easily browse, reserve, and interact with the system.`,
     technologies: [
@@ -496,7 +356,8 @@ This powerful and user-friendly system ensures a seamless and secure experience 
     title: " Laser Hair Removal Clinic",
     Role: "Frontend Developer",
     highlight: "Laser Hair Removal ",
-    videoSrc: "videos/laserlanding.webm",
+    videoSrcWebm: "videos/laserlanding.webm",
+    videoSrcMp4:"videos/laserlanding.mp4",
     client: "Laser  Hair Removal Clinic",
     description: `This platform is specially designed for laser hair removal clinics to make the work easier for admins, receptionists, and clients.
 
@@ -688,7 +549,6 @@ More details about each dashboard and its features are provided below.
             src: "/images/laser/auth2.png",
             desc: "This step is for entering the verification code sent to the user's phone number. Once verified, the user is redirected to the customer dashboard.The login pages for the admin and receptionist are separated from the customer login flow for enhanced security and role management.Authentication tokens are securely stored using  cookies to protect against unauthorized access.",
           },
-          
         ],
       },
 
@@ -702,10 +562,248 @@ More details about each dashboard and its features are provided below.
           },
         ],
       },
+    ],
+  },
 
-     
+  {
+    id: 3,
+    slug: "gold-store",
+    title: "Modern Gold Store",
+    Role: "Frontend Developer",
+    client: "Hossain Gold Store",
+    highlight: "Gold Store",
+    videoSrcWebm: "videos/landingpage.webm",
+    videoSrcMp4:"videos/landingpage.mp4",
+    description: `We have developed a fully responsive gold trading platform built with React and TypeScript, optimized for all screen sizes. The platform features two separate dashboards: one for customers and one for administrators.
 
-     
+Customers can easily buy and sell gold, top up their wallet, withdraw funds, and even request physical gold withdrawals. On the admin side, the dashboard provides tools for monitoring transaction reports, managing deposits and withdrawals, setting gold prices, and more.
+
+This powerful and user-friendly system ensures a seamless and secure experience for both users and administrators.
+
+`,
+    technologies: [
+      {
+        name: "React Js",
+        svg: "/images/react.svg",
+        bgColor: "bg-white text-black",
+      },
+      {
+        name: "TypeScript",
+        icon: SiTypescript,
+        bgColor: "bg-blue-200 text-blue-800",
+      },
+      {
+        name: "React Query",
+        icon: SiReactquery,
+        bgColor: "bg-white text-red-500",
+      },
+
+      {
+        name: "Material UI",
+        svg: "/images/material.svg",
+        bgColor: "bg-blue-50 text-blue-400",
+      },
+
+      {
+        name: "React Hook Form",
+        svg: "/images/react-hook-form.svg",
+        bgColor: "bg-purple-100 text-purple-500",
+      },
+      {
+        name: "Python",
+        svg: "/images/python.svg",
+        bgColor: "bg-purple-100 text-purple-500",
+      },
+      {
+        name: "Django",
+        svg: "/images/django.svg",
+        bgColor: "bg-[#1a6045] text-purple-500",
+      },
+    ],
+
+    KeyFeatures: [
+      {
+        icon: MdDashboard,
+        text: "Dual Dashboard System: Separate, role-based dashboards for admins and customers with tailored access and control",
+      },
+      {
+        icon: GiTrade,
+        text: "Online Buying and Selling with Identity Verification",
+      },
+      {
+        icon: CiWallet,
+        text: "Gold Wallet (Digital Gold Storage)",
+      },
+      {
+        icon: TbReportAnalytics,
+        text: "Comprehensive reporting of all user activities available to the admin for monitoring and analysis.",
+      },
+    ],
+    challenges: [
+      "Handling role-based dashboard access and UI logic",
+      "Building user trust in virtual gold storage",
+    ],
+
+    solutions: [
+      " Implemented dynamic routing and conditional rendering based on user roles (admin/customer) at both backend and frontend levels.",
+      " Developed a transparent gold wallet with real-time balances, full history, and withdrawal options.",
+    ],
+
+    liveUrl: "https://project-one.vercel.app",
+    githubUrl: "https://github.com/RezaFarzipour/Goldstore-Final-Version",
+    features: [
+      {
+        name: "Admin Dashboard",
+        slides: [
+          {
+            title: "Admin view",
+            src: "/images/gold/admindashboard/admin1.png",
+            desc: "This image provides an overview of the admin dashboard, showcasing its key features, including account balance reports, cash withdrawals, gold withdrawals, gold sales, transaction history, and system settings.",
+          },
+          {
+            title: "Sell Gold Report",
+            src: "/images/gold/admindashboard/admin2.png",
+            desc: "This image displays the section of the admin dashboard related to customer gold sales reports. It includes parameters such as the customer's full name, phone number, sale date, sale amount, gold quantity, and transaction status",
+          },
+          {
+            title: "Admin Setting Page",
+            src: "/images/gold/admindashboard/adminsetting.png",
+            desc: "This image shows the admin settings page, featuring options such as setting the gold price, adjusting the store's gold inventory, and configuring the buy-sell price differenceAdditionally, the admin can view the current gold price and the total gold available in the store.",
+          },
+        ],
+      },
+      {
+        name: "Customer Dashboard",
+        slides: [
+          {
+            title: "Customer Dashboard Home",
+            src: "/images/gold/customerdashboard/customerview.png",
+            desc: "This image shows the Home section of the customer dashboard, where users can view the current gold buying price, wallet balance, and gold wallet balance.Additional features available in other sections include cash withdrawal, gold purchase, gold sale, transaction reports, and requests for physical gold delivery.",
+          },
+          {
+            title: "Gold Purchase",
+            src: "/images/gold/customerdashboard/buygold.png",
+            desc: "This image shows the Gold Purchase page, where the customer can view their wallet and gold wallet balances, and proceed to buy gold accordingly.",
+          },
+          {
+            title: "Sell Gold",
+            src: "/images/gold/customerdashboard/sellgold.png",
+            desc: "This image shows the Sell Gold  page, where the customer can view their wallet and gold wallet balances, and proceed to sell gold accordingly.",
+          },
+          {
+            title: "Reports",
+            src: "/images/gold/customerdashboard/reports.png",
+            desc: "In this section, the user can view detailed reports of cash deposits and withdrawals, as well as records of gold purchases and sales.",
+          },
+        ],
+      },
+
+      {
+        name: "Price Calculator",
+        slides: [
+          {
+            title: "Price Calculator",
+            src: "/images/gold/landingbox.png",
+            desc: "This feature is implemented on the landing page and allows users to view both the buy and sell prices of gold. By entering either the amount of gold or the total price, the corresponding value is automatically calculated in real time",
+          },
+        ],
+      },
+    ],
+  },
+
+  //crypto app
+
+  {
+    id: 4,
+    slug: "crypto-app",
+    title: "Crypto App With React.js",
+    Role: "Frontend Developer",
+    client: "Practice Project",
+    highlight: "Crypto App ",
+    videoSrcWebm: "videos/crypto.webm",
+    videoSrcMp4:"videos/crypto.mp4",
+    description: `A fully responsive React crypto tracker that fetches real-time data from CoinGecko, including prices, market cap, and ATH. It features live charts and  search to explore any coin instantly.
+
+
+
+`,
+    technologies: [
+      {
+        name: "React Js",
+        svg: "/images/react.svg",
+        bgColor: "bg-white text-black",
+      },
+      {
+        name: "Recharts",
+        svg: "/images/chart.svg",
+        bgColor: "bg-white text-purple-500",
+      },
+    ],
+
+    KeyFeatures: [
+      {
+        icon: MdDataSaverOff,
+        text: "Live Data Fetching from CoinGecko API",
+      },
+      {
+        icon: FaChartBar,
+        text: "Interactive Chart for Visualizing Coin Metrics",
+      },
+      {
+        icon: SiPagerduty,
+        text: "Pagination Support for Browsing Multiple Coins",
+      },
+      {
+        icon: CiSearch,
+        text: "Search Functionality with API-based Querying",
+      },
+    ],
+    challenges: [
+      "Handling Large API Responses Efficiently",
+      "Keeping Data Up-to-Date in Real-Time",
+    ],
+
+    solutions: [
+      " Implemented pagination to load and render data in smaller chunks, improving performance and user experience.",
+      " Used interval-based live fetching to refresh coin data at regular intervals, ensuring users always see up-to-date information.",
+    ],
+
+    liveUrl: "https://project-one.vercel.app",
+    githubUrl: "https://github.com/RezaFarzipour/crypto-app",
+    features: [
+      {
+        name: "Multi-Currency Price Support",
+        slides: [
+          {
+            title: "multi-currency",
+            src: "/images/crypto/crypto1.png",
+            desc: "This feature allows users to view real-time cryptocurrency prices not only in USD, but also in EUR and JPY, enabling a more localized and flexible experience for international users.",
+          },
+         
+        ],
+      },
+      {
+        name: "Interactive Chart Visualization",
+        slides: [
+          {
+            title: "Interactive Chart",
+            src: "/images/crypto/crypto2.png",
+            desc: "This feature provides an interactive chart displaying key metrics such as price trends, market capitalization, and total trading volume over time. It helps users easily analyze historical performance and market movements of selected cryptocurrencies.",
+          },
+         
+        ],
+      },
+
+      {
+        name: "Dynamic Coin Search",
+        slides: [
+          {
+            title: "Dynamic Coin Search",
+            src: "/images/crypto/crypto3.png",
+            desc: "This feature enables users to search for cryptocurrencies by name. As the user types, the app sends live API requests to fetch and display coins that match or closely resemble the entered keyword, making it easy to find specific assets quickly.",
+          },
+        ],
+      },
     ],
   },
 ];

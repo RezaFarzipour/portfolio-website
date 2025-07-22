@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const SkillBox = () => {
+const SkillBox = ({t}) => {
   const skills = [
     { name: "HTML", logo: "/images/html.png" },
     { name: "CSS", logo: "/images/css.png" },
@@ -9,7 +9,6 @@ const SkillBox = () => {
     { name: "React.js", logo: "/images/react.svg" },
     { name: "Next.JS", logo: "/images/nextjs.png" },
     { name: "Typescript", logo: "/images/typescript.svg" },
-
     { name: "GitHub", logo: "/images/github.png" },
     { name: "Framer Motion", logo: "/images/framermotion.png" },
     { name: "Material Ui", logo: "/images/material.svg" },
@@ -34,7 +33,7 @@ const SkillBox = () => {
         <div className="relative flex ">
           {/* Vertical label */}
           <div className="absolute text-2xl -left-20 border-y-4 border-yellow-400 top-1/2 -translate-y-1/2 rotate-[-90deg] text-white font-bold tracking-wider ">
-            Skills
+         {t("skills")}
           </div>
 
           {/* Skills container */}
