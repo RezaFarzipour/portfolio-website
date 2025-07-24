@@ -70,14 +70,13 @@ const MyProjects = ({ t }) => {
                 // poster=""
                 className="object-cover w-full shadow-[0_0_10px_lightgray] rounded-[20px] transition-all duration-500 hover:shadow-[0_0_15px_#727fde86] max-[1000px]:w-250px max-[1000px]:-ml-[100px] max-[700px]:w-[300px]"
                 ref={(el) => (videoRefs.current[index] = el)}
-                src={project.videoSrc}
+            
                 muted
                 loop
+            
                 playsInline
               >
-                <source src={project.videoSrcWebm} type="video/webm" />
                 <source src={project.videoSrcMp4} type="video/mp4" />
-                video dose not support on your browser
               </video>
 
               <div
