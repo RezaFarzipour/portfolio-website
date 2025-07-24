@@ -6,6 +6,7 @@ import Footer from "../../components/footer";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { routing } from "../../i18n/routing";
+import BackToTopButton from "../../components/BackToTopBtn";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -84,6 +85,7 @@ export default async function RootLayout({ children, params }) {
         <NextIntlClientProvider>
           <Header />
           {children}
+          <BackToTopButton/>
           <Footer />
         </NextIntlClientProvider>
       </body>
