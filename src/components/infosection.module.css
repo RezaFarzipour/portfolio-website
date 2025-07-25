@@ -11,23 +11,27 @@
   background-color: #080020b7;
   border-radius: 20px;
   transition: 0.3s;
+ 
 }
 
 
 
 .card:nth-child(3) {
     grid-row: span 2;
+
     height: 83vh;
     
   }
   
   .card:nth-child(3) p {
-    bottom: 5%;
+    bottom:5%;
     position: absolute;
   }
+
+
   
   .card:nth-child(3) h1 {
-    bottom: 16%;
+    bottom: 14%;
     padding: 5px;
     position: absolute;
   }
@@ -42,10 +46,14 @@
   }
   
   .card:nth-child(4) h1 {
-    bottom: 28%;
+    bottom: 30%;
     position: absolute;
   }
 
+  .card:nth-child(1) h1 {
+
+    bottom: 24%;
+  }
 
 
   /* tablet responsive */
@@ -56,8 +64,10 @@
     .card:nth-child(3),
     .card:nth-child(4) {
       grid-column: span 3;
-      height: 98vh;
+      height: 74vh;
     }
+
+
   
 
   

@@ -67,13 +67,14 @@ const MyProjects = ({ t }) => {
           >
             <BlurSection className="flex items-center  justify-center w-1/2 relative cursor-pointer min-w-[400px] transition duration-500 mix-blend-exclusion">
               <video
-                // poster=""
+                 poster={project.poster}
                 className="object-cover w-full shadow-[0_0_10px_lightgray] rounded-[20px] transition-all duration-500 hover:shadow-[0_0_15px_#727fde86] max-[1000px]:w-250px max-[1000px]:-ml-[100px] max-[700px]:w-[300px]"
                 ref={(el) => (videoRefs.current[index] = el)}
-            
                 muted
                 loop
-            
+                onMouseEnter={(e) => e.currentTarget.play()}
+                onMouseLeave={(e) => e.currentTarget.pause()}
+                onClick={(e) => e.currentTarget.play()} // برای موبایل
                 playsInline
               >
                 <source src={project.videoSrcMp4} type="video/mp4" />
@@ -115,43 +116,3 @@ const MyProjects = ({ t }) => {
 
 export default MyProjects;
 
-// {projectsDetails.map((project, index) => {
-//   const translated = t.raw(project.slug); // ترجمه کامل پروژه
-
-//   return (
-//     <div key={project.id} className="...">
-//       <BlurSection ...>
-//         <video
-//           ...
-//           src={project.videoSrc}
-//           ref={(el) => (videoRefs.current[index] = el)}
-//         />
-//         <div ref={(el) => (hoverRefs.current[index] = el)} className={styles.hover_sign} />
-//       </BlurSection>
-
-//       <FadeInRightSection className="...">
-//         <h1 className="...">
-//           {translated.title.split(" ")[0]}{" "}
-//           <span className="gradient">{translated.highlight}</span> Website
-//         </h1>
-
-//         <p className="...">
-//           {truncateText(translated.description, 100)}
-//         </p>
-
-//         <div className="flex w-full justify-start gap-4 items-center">
-//           <button className="...">
-//             <FaExternalLinkAlt /> <p>Live Demo</p>
-//           </button>
-
-//           <button
-//             onClick={() => router.push(`/projectDetails/${project.slug}`)}
-//             className="..."
-//           >
-//             <IoInformation /> <p>{t("ViewMore")}</p>
-//           </button>
-//         </div>
-//       </FadeInRightSection>
-//     </div>
-//   );
-// })}

@@ -78,15 +78,19 @@ export default async function RootLayout({ children, params }) {
           type="video/mp4"
           muted
           playsInline
-          src="/videos/galaxy.mp4"
+          poster="/images/galaxy-poster.png"
+          preload="auto"
 
-        ></video>
+        >
+            <source src="/videos/galaxy-output.mp4" type="video/mp4" />
+        </video>
         {/* ویدیو و کامپوننت‌ها */}
         <NextIntlClientProvider>
-          <Header />
+        
           {children}
           <BackToTopButton/>
           <Footer />
+         
         </NextIntlClientProvider>
       </body>
     </html>

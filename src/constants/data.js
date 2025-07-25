@@ -17,13 +17,23 @@ export const cardsData = [
   {
     titleKey: "card1.title",
     textKey: "card1.text",
-
     image: "images/personal-image.webp",
     type: "image",
+
+    size:{
+      desktop:{width:"60%",height:"50%"},
+      mobile:{width:"60%",height:"50%"}
+    }
   },
   {
     textKey: "card2.text",
     image: "images/tech4.jpg",
+    width: "78%",
+    height: "65%",
+    size:{
+      desktop:{width:"60%",height:"55%"},
+      mobile:{width:"78%",height:"65%"}
+    },
     type: "image",
   },
   {
@@ -92,8 +102,9 @@ export const projectsDetails = [
     title: " Metallugical Research Center",
     Role: "Frontend Developer",
     highlight: "Metallugical Research ",
-    videoSrcWebm: "videos/metallugicallanding.webm",
-    videoSrcMp4:"videos/metallugicallanding.mp4",
+
+    videoSrcMp4:"videos/metallugy-output.mp4",
+    poster:"images/poster/metalugy.png",
     client: "Islamic Azad University ",
     description: `This project was developed for the Metallurgy Research Center at Islamic Azad University, aimed at streamlining the process of managing laboratory services and bookings. The platform enables the admin team to upload and manage all available services, while customers can easily browse, reserve, and interact with the system.`,
     technologies: [
@@ -358,6 +369,7 @@ export const projectsDetails = [
     highlight: "Laser Hair Removal ",
     videoSrcWebm: "videos/laserlanding.webm",
     videoSrcMp4:"videos/laserlanding.mp4",
+    poster:"images/poster/laser.png",
     client: "Laser  Hair Removal Clinic",
     description: `This platform is specially designed for laser hair removal clinics to make the work easier for admins, receptionists, and clients.
 
@@ -572,8 +584,8 @@ More details about each dashboard and its features are provided below.
     Role: "Frontend Developer",
     client: "Hossain Gold Store",
     highlight: "Gold Store",
-    videoSrcWebm: "videos/landingpage.webm",
-    videoSrcMp4:"videos/landingpage.mp4",
+    videoSrcMp4:"videos/goldlanding-output.mp4",
+    poster:"images/poster/gold.png",
     description: `We have developed a fully responsive gold trading platform built with React and TypeScript, optimized for all screen sizes. The platform features two separate dashboards: one for customers and one for administrators.
 
 Customers can easily buy and sell gold, top up their wallet, withdraw funds, and even request physical gold withdrawals. On the admin side, the dashboard provides tools for monitoring transaction reports, managing deposits and withdrawals, setting gold prices, and more.
@@ -720,7 +732,7 @@ This powerful and user-friendly system ensures a seamless and secure experience 
     Role: "Frontend Developer",
     client: "Practice Project",
     highlight: "Crypto App ",
-    videoSrcWebm: "videos/crypto.webm",
+    poster:"images/poster/crypto.png",
     videoSrcMp4:"videos/crypto.mp4",
     description: `A fully responsive React crypto tracker that fetches real-time data from CoinGecko, including prices, market cap, and ATH. It features live charts and  search to explore any coin instantly.
 

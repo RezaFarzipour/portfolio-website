@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
+import styles from './skillbox.module.css'
 const SkillBox = ({t}) => {
   const skills = [
     { name: "HTML", logo: "/images/html.png" },
@@ -32,12 +32,12 @@ const SkillBox = ({t}) => {
       <div className=" mx-auto px-4">
         <div className="relative flex ">
           {/* Vertical label */}
-          <div className="absolute text-2xl -left-20 border-y-4 border-yellow-400 top-1/2 -translate-y-1/2 rotate-[-90deg] text-white font-bold tracking-wider ">
+          <div className="absolute text-xl md:text-2xl -left-16 md:-left-20 border-y-4 border-yellow-400 top-1/2 -translate-y-1/2 rotate-[-90deg] text-white font-bold tracking-wider ">
          {t("skills")}
           </div>
 
           {/* Skills container */}
-          <div className="h-96 overflow-y-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 px-4 scrollbar-thin scrollbar-thumb-yellow-400 scrollbar-track-gray-800">
+          <div className={`${styles.scrollable_container} h-96 overflow-y-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6  scrollbar-thin scrollbar-thumb-yellow-400 scrollbar-track-gray-800`}>
             {skills.map((skill, index) => (
               <div
                 key={index}

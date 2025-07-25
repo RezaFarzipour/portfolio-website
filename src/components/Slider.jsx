@@ -27,6 +27,12 @@ export default function MySlider({ activeFeature }) {
     }
   }, []);
 
+  useEffect(() => {
+    if (swiperRef.current) {
+      swiperRef.current.slideTo(0);
+    }
+  }, [activeFeature]);
+
   return (
     <div className="relative w-full max-w-[1000px] mx-auto px-4">
       <Swiper
