@@ -7,6 +7,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { routing } from "../../i18n/routing";
 import BackToTopButton from "../../components/BackToTopBtn";
+import { useEffect } from "react";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -57,11 +58,15 @@ export const metadata = {
   },
 };
 
+
+
 export default async function RootLayout({ children, params }) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+
+
 
   return (
     <html lang={params.locale} dir={params.locale === "fa" ? "rtl" : "ltr"}>
@@ -72,7 +77,7 @@ export default async function RootLayout({ children, params }) {
       >
         <video
  
-          className="fixed top-0 left-0 w-full h-full object-cover -z-10 mix-blend-lighten pointer-events-none"
+           className="fixed top-0 left-0 w-full h-full object-cover z-0 pointer-events-none"
           loop
           autoPlay
           type="video/mp4"

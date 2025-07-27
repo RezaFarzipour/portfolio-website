@@ -1,0 +1,38 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://rezafarzipour-portfolio.vercel.app/en</loc>
+    <lastmod>2023-06-06T15:02:24.021Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://rezafarzipour-portfolio.vercel.app/fa</loc>
+    <lastmod>2023-06-06T15:02:24.021Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://rezafarzipour-portfolio.vercel.app/en/projectDetails/metallugical_research_center</loc>
+    <lastmod>2023-06-06T15:02:24.021Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+   <url>
+    <loc>https://rezafarzipour-portfolio.vercel.app/en/projectDetails/laser-clinic</loc>
+    <lastmod>2023-06-06T15:02:24.021Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+     <url>
+    <loc>https://rezafarzipour-portfolio.vercel.app/en/projectDetails/gold-store</loc>
+    <lastmod>2025-06-06T15:02:24.021Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+  </url>
+</urlset>
+
+
+
+

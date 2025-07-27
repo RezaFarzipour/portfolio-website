@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /private/
+
+Sitemap:https://rezafarzipour-portfolio.vercel.app/en/sitemap.xml
