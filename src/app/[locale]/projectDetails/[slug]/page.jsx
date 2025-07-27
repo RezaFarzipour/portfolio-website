@@ -36,7 +36,7 @@ export default function ProjectPage() {
 
 
   return (
-    <div className="flex flex-col w-full gap-5 px-4 md:px-10 mt-10 container mx-auto">
+    <div className="flex flex-col w-full relative z-10 gap-5 px-4 md:px-10 mt-10 container mx-auto">
       <h1 className="text-2xl md:text-4xl font-extrabold my-5">
         {translated.title.split(" ")[0]}{" "}
         <span className="gradient">{translated.highlight}</span>

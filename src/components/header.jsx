@@ -5,10 +5,11 @@ import { IoMdMenu } from "react-icons/io";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useTranslations } from "next-intl";
 import Sidebar from "./Sidebar";
-
+import { useLocale } from "next-intl";
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const t = useTranslations()
+  const t = useTranslations();
+  const locale = useLocale();
 
   const openSidebar = () => {
     setIsSidebarOpen(true);
@@ -20,28 +21,40 @@ const Header = () => {
 
   return (
     <>
-      <header class="flex absolute max-[700px]:h-[50px] max-[700px]:fixed top-0 right-0 left-0 items-center justify-between h-[70px] bg-white/15 backdrop-blur-md px-[30px] shadow-[0_0_15px_#72a1de68] z-[999]">
+      <header class="flex absolute flex-row-reverse max-[700px]:h-[50px] max-[700px]:fixed top-0 right-0 left-0 items-center justify-between h-[70px] bg-white/15 backdrop-blur-md px-[30px] shadow-[0_0_15px_#72a1de68] z-[999]">
         <div className="flex items-center">
           {/* <img className={styles.logo} src="images/miladicode.png" alt="logo" /> */}
           <h1 className="text-3xl max-[700px]:text-[25px]">
-            <span style={{ color: "#72a1de" }}>{t("reza")}</span> {t("farzipour")}
+            <span style={{ color: "#72a1de", fontWeight: "bold" }}>
+              {t("reza")}
+            </span>{" "}
+            {t("farzipour")}
           </h1>
         </div>
-<div></div>
+        <div></div>
         <ul className="flex  border-2 max-[700px]:hidden justify-between w-[30%] px-[15px] py-[15px] rounded-full bg-[rgba(0,0,69,0.3)] shadow-[0_0_10px_#727fde65]">
           <li className="list-none">
-            <a className="no-underline text-white font-bold mx-[10px]" href="#about">
-           {t("about")}
+            <a
+              className="no-underline text-white font-bold mx-[10px]"
+              href="#about"
+            >
+              {t("about")}
             </a>
           </li>
           <li className="list-none">
-            <a className="no-underline text-white font-bold mx-[10px]" href="#skills">
-            {t("headerSkil")}
+            <a
+              className="no-underline text-white font-bold mx-[10px]"
+              href="#skills"
+            >
+              {t("headerSkil")}
             </a>
           </li>
           <li className="list-none">
-            <a className="no-underline text-white font-bold mx-[10px]" href="#projects">
-            {t("HeaderProject")}
+            <a
+              className="no-underline text-white font-bold mx-[10px]"
+              href="#projects"
+            >
+              {t("HeaderProject")}
             </a>
           </li>
         </ul>
@@ -69,13 +82,11 @@ const Header = () => {
             <FaWhatsapp />
           </a>
 
-          <LanguageSwitcher/>
+          <LanguageSwitcher />
         </div>
 
-
-
         <div
-          className="text-[35px] pointer hidden max-[700px]:inline"
+          className={`text-[35px] max-[700px]:inline hidden max-[700px]:fixed top-4 ${locale === "fa" ? "right-4 top-2" : "left-4 top-2"} z-[1000]`}
           onClick={openSidebar}
         >
           <IoMdMenu />
@@ -83,13 +94,8 @@ const Header = () => {
       </header>
 
       {isSidebarOpen && (
-  <Sidebar  isOpen={isSidebarOpen} closeSidebar={closeSidebar} />
-)}
-
-
-  
-
-      
+        <Sidebar isOpen={isSidebarOpen} closeSidebar={closeSidebar} t={t} />
+      )}
     </>
   );
 };

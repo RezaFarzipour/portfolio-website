@@ -16,6 +16,7 @@
   "skills": "skills",
   "reza": "Reza",
   "farzipour": "Farzipour",
+  "language":"Choose Your language",
   "about": "About",
   "headerSkil": "Skills",
   "HeaderProject": "Projects",
@@ -35,6 +36,14 @@
   "card4": {
     "title": "My Passion for Coding",
     "text": "I'm passionate about solving problems and turning challenges into clean, efficient code. For me, it's not just about learning new technologies—it's about developing the mindset of a true software engineer who can think critically, design thoughtfully, and build with purpose."
+  },
+
+
+  "sidebar":{
+    "about":"About Me",
+    "project":"My Projects",
+    "skills":"My Skills"
+
   },
 
   "experience": {
