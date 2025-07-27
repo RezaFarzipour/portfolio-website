@@ -40,6 +40,7 @@ export const cardsData = [
     titleKey: "card3.title",
     textKey: "card3.text",
     video: "videos/glob.mp4",
+    poster:"images/poster/glob.png",
     type: "video",
     button: true,
   },

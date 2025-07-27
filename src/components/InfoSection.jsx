@@ -52,6 +52,7 @@ const InfoSection = ({ t }) => {
                 autoPlay
                 loop
                 muted
+                poster={card.poster}
                 playsInline
                 className="mt-[10%] w-[80%] h-[60%] object-cover mix-blend-lighten max-[1000px]:h-[45%] max-[700px]:w-full"
                 src={card.video}
