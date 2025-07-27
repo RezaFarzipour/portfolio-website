@@ -101,3 +101,6 @@ export default async function RootLayout({ children, params }) {
     </html>
   );
 }
+
+
+// className="fixed top-0 left-0 w-full h-full object-cover -z-10 mix-blend-lighten pointer-events-none"
