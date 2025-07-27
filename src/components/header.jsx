@@ -86,7 +86,7 @@ const Header = () => {
         </div>
 
         <div
-          className={`text-[35px] max-[700px]:inline hidden max-[700px]:fixed top-4 ${locale === "fa" ? "right-4 top-2" : "left-4 top-2"} z-[1000]`}
+          className={`text-[35px] max-[700px]:inline hidden max-[700px]:fixed  ${locale === "fa" ? "right-4 top-2" : "left-4 top-2"} z-[1000]`}
           onClick={openSidebar}
         >
           <IoMdMenu />
