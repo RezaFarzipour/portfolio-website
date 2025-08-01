@@ -33,18 +33,18 @@ const InfoSection = ({ t }) => {
 
             {card.type === "image" && (
               <img
-                className={`
-                mt-3 object-cover rounded-full
-                max-[1000px]:w-[${card.size?.mobile?.width || "70%"}]
-                max-[1000px]:h-[${card.size?.mobile?.height || "50%"}]
-              `}
-                style={{
-                  width: card.size?.desktop?.width || "50%",
-                  height: card.size?.desktop?.height || "57%",
-                }}
-                src={card.image}
-                alt="card-image"
-              />
+              className="mt-3 object-cover rounded-full"
+              style={{
+                width: window.innerWidth < 1000 
+                  ? card.size?.mobile?.width || "70%" 
+                  : card.size?.desktop?.width || "50%",
+                height: window.innerWidth < 1000 
+                  ? card.size?.mobile?.height || "50%" 
+                  : card.size?.desktop?.height || "57%",
+              }}
+              src={card.image}
+              alt="card-image"
+            />
             )}
 
             {card.type === "video" && (

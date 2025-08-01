@@ -64,7 +64,7 @@
     .card:nth-child(3),
     .card:nth-child(4) {
       grid-column: span 3;
-      height: 74vh;
+      height: 86vh;
     }
 
 

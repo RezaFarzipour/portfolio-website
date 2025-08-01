@@ -17,7 +17,7 @@ export const cardsData = [
   {
     titleKey: "card1.title",
     textKey: "card1.text",
-    image: "images/personal-image.webp",
+    image: "images/personal-image.jpg",
     type: "image",
 
     size:{
@@ -32,7 +32,7 @@ export const cardsData = [
     height: "65%",
     size:{
       desktop:{width:"60%",height:"55%"},
-      mobile:{width:"78%",height:"65%"}
+      mobile:{width:"66%",height:"55%"}
     },
     type: "image",
   },
@@ -47,8 +47,13 @@ export const cardsData = [
   {
     titleKey: "card4.title",
     textKey: "card4.text",
-    image: "images/grid4.png",
+    image: "images/passion2.png",
     type: "image",
+    size:{
+      desktop:{width:"35%",height:"50%"},
+      mobile:{width:"80%",height:"50%"}
+    }
+
   },
 ];
 

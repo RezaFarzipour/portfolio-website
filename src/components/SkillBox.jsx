@@ -3,16 +3,16 @@ import React from "react";
 import styles from './skillbox.module.css'
 const SkillBox = ({t}) => {
   const skills = [
-    { name: "HTML", logo: "/images/html.png" },
-    { name: "CSS", logo: "/images/css.png" },
-    { name: "JavaScript", logo: "/images/javascript.png" },
+    { name: "HTML", logo: "/images/icons8-html-5.svg" },
+    { name: "CSS", logo: "/images/icons8-css.svg" },
+    { name: "JavaScript", logo: "/images/icons8-javascript.svg" },
     { name: "React.js", logo: "/images/react.svg" },
-    { name: "Next.JS", logo: "/images/nextjs.png" },
+    { name: "Next.JS", logo: "/images/icons8-nextjs.svg" },
     { name: "Typescript", logo: "/images/typescript.svg" },
-    { name: "GitHub", logo: "/images/github.png" },
-    { name: "Framer Motion", logo: "/images/framermotion.png" },
+    { name: "Git", logo: "/images/icons8-git.svg" },
+    { name: "Framer Motion", logo: "/images/framer-motion.svg" },
     { name: "Material Ui", logo: "/images/material.svg" },
-    { name: "Tailwind", logo: "/images/tailwind.png" },
+    { name: "Tailwind", logo: "/images/icons8-tailwindcss.svg" },
     { name: "Bootstrap", logo: "/images/bootstrap-4.svg" },
     { name: "Chakra Ui", logo: "/images/chakra.svg" },
     { name: "Next Ui", logo: "/images/nextui.svg" },
