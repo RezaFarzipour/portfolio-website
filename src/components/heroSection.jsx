@@ -27,7 +27,7 @@ const HeroSection = ({ t }) => {
           "and",
           "creativity",
         ];
-        const words = wordKeys.map(t);
+  const words = wordKeys.map(t);
   return (
     <section className="text-white max-[700px]:mt-[20%]  mt-[10%] flex flex-col items-center justify-center text-center px-[20px] ">
       <div className="text-[#727fde] px-[15px] py-[5px] border border-[#727fde77] flex items-center gap-[6px] bg-[#2200493d] shadow-[0_0_5px_#727fde88] rounded-full mb-8">
@@ -55,10 +55,12 @@ const HeroSection = ({ t }) => {
         animate={{ opacity: 1 }}
         transition={{ delay: words.length * 0.3 + 0.5 }}
       >
-   {t("introduction")}
+        {t("introduction")}
       </motion.p>
 
-      <motion.button
+      <motion.a
+        href="/rezafarzipour-CV.pdf"
+        download="Rezafarzipour-CV.pdf"
         className="bg-transparent text-white px-6 py-3 border border-white rounded-md cursor-pointer transition-all duration-300 ease-in-out hover:bg-white hover:text-[#0b0b1f]"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
@@ -66,8 +68,8 @@ const HeroSection = ({ t }) => {
         animate={{ opacity: 1 }}
         transition={{ delay: words.length * 0.3 + 1 }}
       >
-       {t("cv")} ↗
-      </motion.button>
+        {t("cv")} ↗
+      </motion.a>
     </section>
   );
 };

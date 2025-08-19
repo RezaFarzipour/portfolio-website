@@ -20,19 +20,19 @@ export const cardsData = [
     image: "images/personal-image.jpg",
     type: "image",
 
-    size:{
-      desktop:{width:"60%",height:"50%"},
-      mobile:{width:"60%",height:"50%"}
-    }
+    size: {
+      desktop: { width: "60%", height: "50%" },
+      mobile: { width: "60%", height: "50%" },
+    },
   },
   {
     textKey: "card2.text",
     image: "images/tech4.jpg",
     width: "78%",
     height: "65%",
-    size:{
-      desktop:{width:"60%",height:"55%"},
-      mobile:{width:"66%",height:"55%"}
+    size: {
+      desktop: { width: "60%", height: "55%" },
+      mobile: { width: "66%", height: "55%" },
     },
     type: "image",
   },
@@ -40,7 +40,7 @@ export const cardsData = [
     titleKey: "card3.title",
     textKey: "card3.text",
     video: "videos/glob.mp4",
-    poster:"images/poster/glob.png",
+    poster: "images/poster/glob.png",
     type: "video",
     button: true,
   },
@@ -49,11 +49,10 @@ export const cardsData = [
     textKey: "card4.text",
     image: "images/passion2.png",
     type: "image",
-    size:{
-      desktop:{width:"35%",height:"50%"},
-      mobile:{width:"80%",height:"50%"}
-    }
-
+    size: {
+      desktop: { width: "35%", height: "50%" },
+      mobile: { width: "80%", height: "50%" },
+    },
   },
 ];
 
@@ -109,8 +108,8 @@ export const projectsDetails = [
     Role: "Frontend Developer",
     highlight: "Metallugical Research ",
 
-    videoSrcMp4:"videos/metallugy-output.mp4",
-    poster:"images/poster/metalugy.png",
+    videoSrcMp4: "videos/metallugy-output.mp4",
+    poster: "images/poster/metalugy.png",
     client: "Islamic Azad University ",
     description: `This project was developed for the Metallurgy Research Center at Islamic Azad University, aimed at streamlining the process of managing laboratory services and bookings. The platform enables the admin team to upload and manage all available services, while customers can easily browse, reserve, and interact with the system.`,
     technologies: [
@@ -374,8 +373,8 @@ export const projectsDetails = [
     Role: "Frontend Developer",
     highlight: "Laser Hair Removal ",
     videoSrcWebm: "videos/laserlanding.webm",
-    videoSrcMp4:"videos/laserlanding.mp4",
-    poster:"images/poster/laser.png",
+    videoSrcMp4: "videos/laserlanding.mp4",
+    poster: "images/poster/laser.png",
     client: "Laser  Hair Removal Clinic",
     description: `This platform is specially designed for laser hair removal clinics to make the work easier for admins, receptionists, and clients.
 
@@ -590,8 +589,8 @@ More details about each dashboard and its features are provided below.
     Role: "Frontend Developer",
     client: "Hossain Gold Store",
     highlight: "Gold Store",
-    videoSrcMp4:"videos/goldlanding-output.mp4",
-    poster:"images/poster/gold.png",
+    videoSrcMp4: "videos/goldlanding-output.mp4",
+    poster: "images/poster/gold.png",
     description: `We have developed a fully responsive gold trading platform built with React and TypeScript, optimized for all screen sizes. The platform features two separate dashboards: one for customers and one for administrators.
 
 Customers can easily buy and sell gold, top up their wallet, withdraw funds, and even request physical gold withdrawals. On the admin side, the dashboard provides tools for monitoring transaction reports, managing deposits and withdrawals, setting gold prices, and more.
@@ -738,8 +737,8 @@ This powerful and user-friendly system ensures a seamless and secure experience 
     Role: "Frontend Developer",
     client: "Practice Project",
     highlight: "Crypto App ",
-    poster:"images/poster/crypto.png",
-    videoSrcMp4:"videos/crypto.mp4",
+    poster: "images/poster/crypto.png",
+    videoSrcMp4: "videos/crypto.mp4",
     description: `A fully responsive React crypto tracker that fetches real-time data from CoinGecko, including prices, market cap, and ATH. It features live charts and  search to explore any coin instantly.
 
 
@@ -797,7 +796,6 @@ This powerful and user-friendly system ensures a seamless and secure experience 
             src: "/images/crypto/crypto1.png",
             desc: "This feature allows users to view real-time cryptocurrency prices not only in USD, but also in EUR and JPY, enabling a more localized and flexible experience for international users.",
           },
-         
         ],
       },
       {
@@ -808,7 +806,6 @@ This powerful and user-friendly system ensures a seamless and secure experience 
             src: "/images/crypto/crypto2.png",
             desc: "This feature provides an interactive chart displaying key metrics such as price trends, market capitalization, and total trading volume over time. It helps users easily analyze historical performance and market movements of selected cryptocurrencies.",
           },
-         
         ],
       },
 
